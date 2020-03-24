@@ -1,0 +1,25 @@
+{
+  "name": "scobo/scobo",
+  "description": "A vanilla PHP search provider",
+  "keywords": ["search", "php", "provider", "drivers", "scobo"],
+  "homepage": "https://scobo.dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthew Kilgore",
+      "homepage": "https://kilgore.dev",
+      "email": "matthew@kilgore.dev",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/scobo-search/scobo/issues",
+    "source": "https://github.com/scobo-search/scobo",
+    "docs": "https://scobo.dev/docs/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scobo\\": "src/"
+    }
+  }
+}
