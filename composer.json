@@ -17,6 +17,9 @@
     "source": "https://github.com/scobo-search/scobo",
     "docs": "https://scobo.dev/docs/"
   },
+  "require": {
+    "php": ">7.2"
+  },
   "autoload": {
     "psr-4": {
       "Scobo\\": "src/"
