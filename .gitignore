@@ -1,3 +1,4 @@
 .idea
 *.iws
-
+vendor/
+composer.lock

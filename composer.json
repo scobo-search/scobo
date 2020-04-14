@@ -18,7 +18,8 @@
     "docs": "https://scobo.dev/docs/"
   },
   "require": {
-    "php": ">7.2"
+    "php": ">7.2",
+    "wixel/gump": "^1.11"
   },
   "autoload": {
     "psr-4": {
