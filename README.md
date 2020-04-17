@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/scobo-search/scobo) 
+
 ## About Scobo
 Scobo is the vanilla PHP search provider, Matt started developing this library when he got tired of seeing that Laravel scout was the only abstract option. Worse it only worked with laravel projects. He set out to create a library that works for everyone.
 
