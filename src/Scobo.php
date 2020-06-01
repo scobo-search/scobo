@@ -9,14 +9,14 @@ namespace Scobo;
 
 require './vendor/autoload.php';
 
-use Scobo\Drivers\Driver;
+use Scobo\Drivers\AbstractDriver;
 
 class Scobo {
 
     protected $driver;
     protected $index;
 
-    public function __construct(Driver $driver)
+    public function __construct(AbstractDriver $driver)
     {
         $this->driver = $driver;
     }
