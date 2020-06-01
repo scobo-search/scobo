@@ -41,18 +41,14 @@ class Scobo {
     }
 
     public function add(string $index, array $object) : string {
-        $this->driver->add($index, $object);
+        return $this->driver->add($index, $object);
     }
 
     public function remove(string $objectId) : bool {
-        $this->driver->delete($objectId);
+        return $this->driver->delete($objectId);
     }
 
     public function search(string $index, string $query, array $options = null) : array {
-        $this->driver->search($index, $query, $options);
-    }
-
-    private function runGambits(string $query) {
-        
+        return $this->driver->search($index, $query, $options);
     }
 }

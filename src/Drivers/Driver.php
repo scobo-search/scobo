@@ -20,7 +20,16 @@ abstract class Driver {
      * @param array $object
      * @return string
      */
-    abstract public function add(string $index, array $object): string;
+    abstract public function addItem(string $index, array $object): string;
+
+    /**
+     * Add item to index
+     *
+     * @param string $index
+     * @param array $object
+     * @return string
+     */
+    abstract public function addItems(string $index, array $object): string;
 
     /**
      * Delete object from index
@@ -29,6 +38,13 @@ abstract class Driver {
      * @return mixed
      */
     abstract public function delete(string $objectId);
+
+    /**
+     * Add a filter to the search
+     *
+     * @param array $filter
+     * @return mixed
+     */
     abstract public function filter(array $filter);
 
     /**
