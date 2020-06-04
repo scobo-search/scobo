@@ -2,4 +2,4 @@
 *.iws
 vendor/
 composer.lock
-drivers/
+/drivers/
