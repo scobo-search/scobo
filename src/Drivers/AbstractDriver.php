@@ -37,7 +37,7 @@ abstract class AbstractDriver {
      * @param string $objectId
      * @return mixed
      */
-    abstract public function delete(string $objectId);
+    abstract public function delete(string $index, string $objectId);
 
     /**
      * Add a filter to the search

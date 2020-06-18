@@ -7,8 +7,6 @@
  */
 namespace Scobo;
 
-require './vendor/autoload.php';
-
 use Scobo\Drivers\AbstractDriver;
 
 class Scobo {
@@ -40,15 +38,15 @@ class Scobo {
         return $this;
     }
 
-    public function add(string $index, array $object) : string {
-        return $this->driver->add($index, $object);
+    public function add(array $object) : string {
+        return $this->driver->add($this->index, $object);
     }
 
     public function remove(string $objectId) : bool {
-        return $this->driver->delete($objectId);
+        return $this->driver->delete($this->index, $objectId);
     }
 
-    public function search(string $index, string $query, array $options = null) : array {
-        return $this->driver->search($index, $query, $options);
+    public function search(string $query, array $options = null) : array {
+        return $this->driver->search($this->index, $query, $options);
     }
 }
