@@ -39,7 +39,15 @@ class Scobo {
     }
 
     public function add(array $object) : string {
-        return $this->driver->add($this->index, $object);
+        return $this->driver->addItem($this->index, $object);
+    }
+
+    public function addMultiple(array $objects) : array {
+        $objectIds = [];
+        foreach ($objects as $object) {
+            $objectIds[] = $this->driver->addItems($this->index, $object);
+        }
+        return $objectIds;
     }
 
     public function remove(string $objectId) : bool {
@@ -48,5 +56,9 @@ class Scobo {
 
     public function search(string $query, array $options = null) : array {
         return $this->driver->search($this->index, $query, $options);
+    }
+
+    public function flush() : bool{
+        return $this->driver->flush($this->index);
     }
 }

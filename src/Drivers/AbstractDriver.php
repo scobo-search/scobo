@@ -34,6 +34,7 @@ abstract class AbstractDriver {
     /**
      * Delete object from index
      *
+     * @param string $index
      * @param string $objectId
      * @return mixed
      */
